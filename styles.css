@@ -1,31 +1,20 @@
-#Stylish {
-    font-weight: bold;
-font-weight: underline;
-font-weight: italic;
-text-align: center;
-color: pink;
-background:purple;
-}
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
-
-
 #base {
-    Background: white;
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+  background: white;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
-
 #background {
   width: 70vmin;
   height: 70vmin;
-  background: #e8e0ff;
+  background: #c5bbe4;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -41,7 +30,7 @@ background:purple;
   border-top-right-radius: 50%;
   border-bottom: 0;
   box-sizing: border-box;
-  background: #ffdcff;
+  background: #ffb3ff;
 }
 #feets {
   display: flex;
@@ -55,7 +44,7 @@ background:purple;
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
   border-top: 0;
-  background: #ffdcff;
+  background: #ffb3ff;
 }
 #peepers {
   position: absolute;
@@ -67,6 +56,17 @@ background:purple;
   left: 5vmin;
   box-shadow: 14vmin 0;
 }
+#peepers:before{
+  content: "";
+  position: absolute;
+  background: white;
+  width: 2.5vmin;
+  height: 2.5vmin;
+  border-radius: 50%;
+  left: 2vmin;
+  box-shadow: 14vmin 0 white;
+}
+
 #snoot {
   position: absolute;
   width: 4vmin;
@@ -78,6 +78,9 @@ background:purple;
   top: 16vmin;
   left: 12vmin;
 }
+
+/* Both wagglers (hands) have */
+/* much in common */
 #left-waggler, #right-waggler {
   position: absolute;
   width: 4vmin;
@@ -87,6 +90,10 @@ background:purple;
   border-bottom-right-radius: 50%;
   border-top: 0;
 }
+
+/* But are in different */ 
+/* 1. locations and */
+/* 2. orientations */
 #left-waggler {
   top: 22vmin;
   left: 6vmin;
